@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/openisans-italic-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-700.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/roboto-italic-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/yellowtail-400.woff") format("woff");
+  font-display: swap;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #274c5b;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.navigation-list {
+  display: flex;
+  grid-gap: 4px;
+  list-style-type: none;
+}
+
+.navigation-user-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #274c5b;
+  padding: 5px 10px;
+}
+
+.navigation-item {
+  width: 95px;
+  text-align: center;
+}
+
+.hero {
+  max-width: 1920px;
+  padding: 247px 800px 246px 260px;
+  background-color: #e3f1e9;
+  background-image: url(../images/hero_frame.png), url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 400;
+  color: #68a47f;
+}
+
+.lead {
+  margin: 0;
+  padding: 0;
+  color: #274c5b;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 70px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.button {
+  padding: 28px 39px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #274c5b;
+  border: none;
+  border-radius: 16px;
+}
+
+.hero-button {
+  color: #274c5b;
+  background-color: #efd372;
+}
