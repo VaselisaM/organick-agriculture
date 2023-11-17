@@ -8,9 +8,9 @@
 
 @font-face {
   font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/openisans-italic-400.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/openisans-700.woff") format("woff");
   font-display: swap;
 }
 
@@ -31,14 +31,6 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/roboto-italic-400.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Yellowtail";
   font-style: normal;
   font-weight: 400;
@@ -47,10 +39,11 @@
 }
 
 body {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
-  line-height: 30px;
+  line-height: normal;
   font-weight: 400;
   color: #274c5b;
 }
@@ -68,6 +61,7 @@ body {
 
 .navigation {
   display: flex;
+  padding: 69px 162px;
   font-family: "Roboto";
   font-style: normal;
   font-size: 20px;
@@ -98,24 +92,28 @@ body {
 }
 
 .hero {
-  max-width: 1920px;
   padding: 247px 800px 246px 260px;
   background-color: #e3f1e9;
-  background-image: url(../images/hero_frame.png), url(../images/hero.jpg);
+  background-image: url("../images/hero-frame.png"), url("../images/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0 0 154px;
 }
 
 .title {
   margin: 0;
   padding: 0;
   font-family: "Yellowtail";
-  font-style: normal;
   font-size: 36px;
   line-height: normal;
   font-weight: 400;
   color: #68a47f;
+  cursor: default;
+}
+
+.hero-title {
+  margin: 0 0 8px;
 }
 
 .lead {
@@ -123,26 +121,384 @@ body {
   padding: 0;
   color: #274c5b;
   font-family: Roboto;
-  font-style: normal;
-  font-size: 70px;
+  font-size: 50px;
   line-height: normal;
+  font-weight: 700;
+  cursor: default;
+}
+
+.hero-lead {
+  margin: 0 0 23px;
+  font-size: 70px;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 25px;
   font-weight: 700;
 }
 
+.content {
+  margin: 0;
+  line-height: 29.772px;
+}
+
 .button {
-  padding: 28px 39px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 220px;
+  padding: 27.5px 39px;
   font-family: Roboto;
-  font-style: normal;
   font-size: 20px;
   line-height: normal;
   font-weight: 700;
+  text-decoration: none;
   color: #ffffff;
   background-color: #274c5b;
   border: none;
   border-radius: 16px;
+  cursor: pointer;
+}
+
+.button:after {
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin: 3px 0 0 10px;
+  background-color: #335b6b;
+  background-image: url("../images/button-aerrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  content: "";
 }
 
 .hero-button {
   color: #274c5b;
   background-color: #efd372;
+}
+
+.offer_banner {
+  margin: 0 0 190px;
+}
+
+.offer_banner-list {
+  display: flex;
+  justify-content: center;
+  grid-gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.offer_banner-item {
+  display: block;
+}
+
+.about {
+  box-sizing: border-box;
+  min-height: 1067px;
+  margin: 0 0 176px;
+  padding: 183px 200px 123px 1000px;
+  background-color: #f9f8f8;
+  background-image: url("../images/about.png");
+  background-repeat: no-repeat;
+  background-position-x: 150px;
+  background-position-y: 87px;
+}
+
+.about-title {
+  margin: 0 0 7px;
+}
+
+.about-lead {
+  margin: 0 0 14px;
+}
+
+.about-list {
+  display: flex;
+  grid-gap: 30px;
+  flex-wrap: wrap;
+  margin: 46px 0;
+  padding: 0;
+}
+
+.about-item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-subtitle {
+  margin: 0 0 7px;
+}
+
+.organic:before {
+  display: block;
+  width: 101px;
+  height: 101px;
+  margin: 0 19px 0 0;
+  float: left;
+  background-color: #ffffff;
+  background-image: url("../images/organic.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  content: "";
+}
+
+.quality:before {
+  display: block;
+  width: 101px;
+  height: 101px;
+  margin: 0 19px 0 0;
+  float: left;
+  background-color: #ffffff;
+  background-image: url("../images/quality.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+  content: "";
+}
+
+.categories {
+  margin: 0 0 200px;
+  text-align: center;
+}
+
+.categories-title {
+  margin: 0 0 8px;
+}
+
+.categories-lead {
+  margin: 0 0 40px;
+}
+
+.categories-card-list {
+  display: flex;
+  grid-gap: 20px;
+  width: 1400px;
+  margin: auto;
+  margin-bottom: 126px;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.card {
+  display: block;
+  box-sizing: border-box;
+  width: 335px;
+  min-height: 483px;
+  padding: 29px 28px 17px;
+  text-align: left;
+  background-color: #f9f8f8;
+  border-radius: 30px;
+}
+
+.card-group {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 6px 13px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #274c5b;
+  border-radius: 8px;
+}
+
+.card-image {
+  display: block;
+  width: 272px;
+  height: 272px;
+  margin: 0 0 54px;
+  mix-blend-mode: multiply;
+}
+
+.card-title {
+  margin: 0 0 13px;
+  font-size: 20px;
+}
+
+.card-prices {
+  display: flex;
+  align-items: center;
+  padding: 6px 0 0;
+}
+
+.card-prices:after {
+  position: absolute;
+  width: 275px;
+  height: 1px;
+  background: #dedddd;
+  content: "";
+}
+
+.card-sale {
+  margin: 0 8px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #b8b8b8;
+  text-decoration: line-through;
+}
+
+.card-price {
+  margin: 0;
+  font-weight: 700;
+}
+
+.offer-card-list {
+  display: flex;
+  grid-gap: 20px;
+}
+
+.card-rating {
+  width: 84px;
+  height: 19px;
+  margin: 0;
+  margin-left: auto;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+}
+
+.categories-button {
+  margin: auto;
+}
+
+.reviews-advantages {
+  display: block;
+  box-sizing: border-box;
+  min-height: 1267px;
+  padding: 164px 200px;
+  background-image: url("../images/reviews.png"), url("../images/reviews-right.png");
+  background-position: left, right;
+  background-repeat: no-repeat;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.reviews-title {
+  margin: 0 0 8px 0;
+}
+
+.rewiews-lead {
+  margin: 0 0 60px 0;
+}
+
+.reviews-card-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews-card-list:before {
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  background-image: url("../images/sara-taylor.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  content: "";
+}
+
+.reviews-rating {
+  width: 84px;
+  height: 19px;
+  margin: auto;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+}
+
+.slider-pagination {
+  display: flex;
+  justify-content: center;
+  grid-gap: 5.5px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination-button {
+  display: block;
+  box-sizing: border-box;
+  width: 8px;
+  height: 12px;
+  background-color: #c4c4c4;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.curren-slider-pagination-button {
+  background-color: #7eb693;
+}
+
+.reviews-text {
+  line-height: 29.772px;
+}
+
+.reviews-autor-name {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.reviews-autor {
+  font-size: 15px;
+  line-height: 24.81px;
+  color: #525c60;
+}
+
+.advanteges-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 62px;
+  margin: 0;
+  padding: 0;
+}
+
+.advanteges-item {
+  display: block;
+  box-sizing: border-box;
+  width: 211px;
+  height: 211px;
+  padding: 55px 0;
+  border: 3px solid #7eb693;
+  border-radius: 50%;
+  list-style-type: none;
+  text-align: center;
+}
+
+.advanteges-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.advateges-text {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 29.772px;
+}
+
+.offer {
+  padding: 200px 0;
+  background-color: #274c5b;
+}
+
+.offer-lead {
+  color: #ffffff;
 }
